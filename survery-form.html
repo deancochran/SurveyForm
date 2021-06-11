@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- tab name -->
+        <title id='Tab'> Dean Cochran's Survery  Form</title>
+        <!-- style imports -->
+        <link rel='stylesheet' href='./survery-form.css'> 
+    </head>
+    <body>
+        <div id="main">
+
+        <!-- 
+            <div id="header">
+                <div id="nav">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href=""> Link to Somewhere </a>
+                            </li>
+                            <li>
+                                <a href=""> Link to Somewhere </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        -->
+
+            <div id="survey"> 
+                <div id="header">
+                    <div id="title-div">
+                        <h1 id="title">Music Genre Survey</h1>
+                    </div>
+                    <div id="description-div">
+                        <p id="description">This survey is going accumulate information based on user music preferences to provide users with insights on music they will most enjoy</p>
+                    </div>
+                </div>
+                <div id ="form-div">
+                    <form id="survey-form">
+
+                        <div class="form-group">
+                        <label id="name-label" for="name">Name</label>
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            class="form-control"
+                            placeholder="Enter your name"
+                            required
+                        />
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                        <label id="email-label" for="email">Email</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            class="form-control"
+                            placeholder="Enter your Email"
+                            required
+                        />
+                        </div>
+
+
+                        <div class="form-group">
+                        <label id="number-label" for="number"
+                            >Age <span class="clue">(optional)</span> </label
+                        >
+                        <input
+                            type="number"
+                            name="age"
+                            id="number"
+                            min="10"
+                            max="99"
+                            class="form-control"
+                            placeholder="Age"
+                        />
+                        </div>
+                        
+                        <div class="form-group">
+                            <p>Which option best describes you?</p>
+                                <select id="dropdown" name="role" class="form-control" required>
+                                    <option disabled selected value>Select current status</option>
+                                    <option value="student">Student</option>
+                                    <option value="job">Full Time Job</option>
+                                    <option value="learner">Full Time Learner</option>
+                                    <option value="preferNo">Prefer not to say</option>
+                                    <option value="other">Other</option>
+                                </select>
+                        </div>
+
+                        <div class="form-group">
+                            <p>How did you find this survey?</p>
+                                <select id="dropdown" name="method" class="form-control" required>
+                                    <option disabled selected value>Select method of discovery</option>
+                                    <option value="email">Email</option>
+                                    <option value="social-media">Social Media</option>
+                                    <option value="blog">Blog</option>
+                                    <option value="project">Project</option>
+                                    <option value="github">GitHub</option>
+                                    <option value="other">Other</option>
+                                </select>
+                        </div>
+
+                        <div class="form-group">
+                            <p>Would you like to be emailed when I upload new products and updates peretaining to this survey?</p>
+                            <label>
+                              <input
+                                name="user-interest"
+                                value="yes"
+                                type="radio"
+                                class="input-radio"
+                                checked
+                              />
+                              Yes
+                              </label
+                            >
+                            <label>
+                                <input
+                                name="user-interest"
+                                value="no"
+                                type="radio"
+                                class="input-radio"
+                              />
+                              No
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <p>
+                              What are your favorite genres of music?
+                              <span class="clue">(Check all that apply)</span>
+                            </p>
+                      
+                            <label
+                              ><input
+                              name="genre"
+                              value="country"
+                              type="checkbox"
+                              class="input-checkbox"
+                              />Country</label
+                            >
+                            <label>
+                              <input
+                                name="genre"
+                                value="Blue"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Blues</label
+                            >
+                            <label
+                              ><input
+                                    name="genre"
+                                    value="dance"
+                                    type="checkbox"
+                                    class="input-checkbox"
+                                />Dance</label
+                            >
+                            <label
+                              ><input
+                              name="genre"
+                              value="jazz"
+                              type="checkbox"
+                              class="input-checkbox"
+                              />Jazz</label
+                            >
+                            <label
+                              ><input
+                                name="genre"
+                                value="hiphop"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Hip Hop</label
+                            >
+                            <label
+                              ><input
+                                name="genre"
+                                value="rap"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Rap</label
+                            >
+                            <label
+                              ><input
+                                name="genre"
+                                value="rnb"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Rythm and Blues</label
+                            >
+                            <label
+                              ><input
+                                name="genre"
+                                value="rock"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Rock</label
+                            >
+                            <label
+                              ><input
+                                name="genre"
+                                value="soul"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Soul</label
+                            >
+                            <label
+                              ><input
+                                name="genre"
+                                value="othere"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Other</label
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <p>Any Additional comments?</p>
+                            <textarea
+                              id="comments"
+                              class="input-textarea"
+                              name="comment"
+                              placeholder="Enter your comment here..."
+                            >
+                            </textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" id="submit" class="submit-button">
+                              Submit
+                            </button>
+                        </div>
+                        
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div id="copy-right"> Copyright Dean Cochran 2021</div>
+    </footer>
+    <script src="./survery-form.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
